@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Greengrocer's</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <section class="products">
+      <h1>List of products:</h1>
+      <ul class="products-list">
+        <li>
+          <strong>Cucumber</strong> - 9.99
+          <button
+            class="btn-buy-product"
+            data-name="cucumber"
+            data-price="9.99"
+          >
+            Buy
+          </button>
+        </li>
+        <li>
+          <strong>Tomatoes</strong> - 5.50
+          <button
+            class="btn-buy-product"
+            data-name="tomatoes"
+            data-price="5.50"
+          >
+            Buy
+          </button>
+        </li>
+        <li>
+          <strong>Oranges</strong> - 2.99
+          <button class="btn-buy-product" data-name="oranges" data-price="2.99">
+            Buy
+          </button>
+        </li>
+      </ul>
+    </section>
+    <section class="basket">
+      <h1>Basket</h1>
+      <ul class="basket-list"></ul>
+      <button class="btn-buy-all" disabled>Make an order!</button>
+    </section>
+    <section class="admin-login">
+      <h2>Admin panel</h2>
+      <input
+        type="text"
+        name="login-username"
+        placeholder="Username"
+        required
+      />
+      <input
+        type="text"
+        name="login-password"
+        placeholder="Password"
+        required
+      />
+      <button class="login-button">Login</button>
+    </section>
+    <section class="admin-add-product hidden">
+      <h1>Admin panel</h1>
+      <form class="form-admin">
+        <input
+          type="text"
+          name="product-name"
+          placeholder="Enter name of product"
+          required
+        />
+        <input
+          type="number"
+          name="product-price"
+          placeholder="Enter price of product"
+          step="0.01"
+          required
+        />
+        <button type="submit">Confirm</button>
+      </form>
+    </section>
+    <script src="src/app.js"></script>
+    <script src="src/interface.js"></script>
+    <script src="src/admin-ui.js"></script>
+  </body>
+</html>
